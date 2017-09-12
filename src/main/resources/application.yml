@@ -1,11 +1,23 @@
-spring.jpa.hibernate.ddl-auto=update
+---
 
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
 
-mysql.dbName=company-db
-mysql.server=localhost
-mysql.port=3306
-mysql.user=mysql-user
-mysql.password=some-password
+---
 
-logging.file=company.log
+spring:
+  profiles: local
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/company
+    username: user
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+
