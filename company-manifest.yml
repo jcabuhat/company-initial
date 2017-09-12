@@ -9,3 +9,6 @@ applications:
     memory: 750M
     name: company
     path: build/libs/company.jar
+    services: 
+      - companydb
+
