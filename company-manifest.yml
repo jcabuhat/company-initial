@@ -11,4 +11,5 @@ applications:
     path: build/libs/company.jar
     services: 
       - companydb
+      - cfgserverrepo
 

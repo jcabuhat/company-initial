@@ -1,0 +1,17 @@
+---
+
+spring:
+  application:
+    name: company
+  cloud:
+    config:
+      uri: configserverrepo
+
+management:
+  security:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
+
