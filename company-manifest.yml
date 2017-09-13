@@ -9,6 +9,7 @@ applications:
     memory: 750M
     name: company
     path: build/libs/company.jar
+    timeout: 180
     services: 
       - companydb
       - cfgserverrepo
