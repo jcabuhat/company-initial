@@ -6,7 +6,7 @@ applications:
     env: 
       SPRING_PROFILES_ACTIVE: cloud,dev
     instances: 1
-    memory: 750M
+    memory: 1G
     name: company
     path: build/libs/company.jar
     timeout: 180
